@@ -5,6 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
+ollama = "*"
+llama-index = "*"
+qdrant-client = "*"
+torch = "*"
+transformers = "*"
+llama-index-llms-ollama = "*"
 
 [dev-packages]
 
