@@ -16,36 +16,11 @@
         <h2>Clique si tu l'oses !</h2>
         <div class="container">
             
+            {% for x in files_path %}
             <div class="item">
-                <img src="{{ url_for('main.static', filename='img/hamster.jpg') }}">
+                <img src="{{ x }}">
             </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/lama.jpeg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/dogface.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/pote.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/cat.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/Ronald_McDonald.png') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/zebre.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/basquiat.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/bird_money.jpg') }}">
-            </div>
-            <div class="item">
-                <img src="{{ url_for('main.static', filename='img/cat2.jpg') }}">
-            </div>
+            {% endfor %}
             
 
         </div>
